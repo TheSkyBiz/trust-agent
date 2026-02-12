@@ -8,7 +8,7 @@ when risk is detected.
 
 ------------------------------------------------------------------------
 
-## 🚀 Why This Project Matters
+## Why This Project Matters
 
 Large Language Models often sound confident even when they are wrong.
 Automatic evaluation and reliability pipelines are becoming essential in
@@ -23,7 +23,7 @@ safety and epistemic robustness in LLM workflows.
 
 ------------------------------------------------------------------------
 
-## 🧠 Architecture
+## Architecture
 
     User Query
        ↓
@@ -37,34 +37,34 @@ safety and epistemic robustness in LLM workflows.
 
 ------------------------------------------------------------------------
 
-## ⭐ Key Features
+## Key Features
 
-✅ **Asymmetric Model Design**\
+**Asymmetric Model Design**\
 Uses a smaller model for generation and a stronger model for evaluation
 --- a common pattern in production AI systems.
 
-✅ **Automated Self-Critique**\
+**Automated Self-Critique**\
 Each response is analyzed for hallucination risk, logical errors,
 factual accuracy, and overconfidence.
 
-✅ **Trust Scoring**\
+**Trust Scoring**\
 Structured output allows programmatic decision-making based on evaluator
 confidence.
 
-✅ **Conditional Regeneration**\
+**Conditional Regeneration**\
 Low-trust answers trigger a safer second-pass response.
 
-✅ **Run Logging**\
+**Run Logging**\
 All interactions are stored for lightweight evaluation and failure
 analysis.
 
-✅ **Premise Correction**\
+**Premise Correction**\
 The generator is instructed to reject false assumptions rather than
 hallucinate explanations.
 
 ------------------------------------------------------------------------
 
-## 📦 Installation
+## Installation
 
 ### 1. Install dependencies
 
@@ -76,7 +76,7 @@ pip install langchain langchain-core langchain-community langchain-ollama pypand
 
 Download from:
 
-👉 https://ollama.com
+https://ollama.com
 
 ### 3. Pull required models
 
@@ -87,7 +87,7 @@ ollama pull llama3:8b
 
 ------------------------------------------------------------------------
 
-## ▶️ Run The Project
+## Run The Project
 
 ``` bash
 python main.py
@@ -98,7 +98,7 @@ real time.
 
 ------------------------------------------------------------------------
 
-## 🧪 Example Edge Cases To Try
+## Example Edge Cases To Try
 
 -   "Predict the exact stock price of Tesla next month."
 -   "Why do humans only use 10% of their brain?"
@@ -111,7 +111,7 @@ These help stress-test evaluator calibration and premise resistance.
 
 ------------------------------------------------------------------------
 
-## ⚠️ Known Failure Modes
+## Known Failure Modes
 
 No evaluation system is perfect. During testing, the following
 limitations were observed:
@@ -126,7 +126,7 @@ These reflect active research challenges in LLM reliability engineering.
 
 ------------------------------------------------------------------------
 
-## 🔮 Future Improvements
+## Future Improvements
 
 -   Multi-judge consensus evaluation\
 -   Confidence-based routing\
@@ -136,22 +136,16 @@ These reflect active research challenges in LLM reliability engineering.
 
 ------------------------------------------------------------------------
 
-## 🎯 What This Project Demonstrates
+## What This Project Demonstrates
 
 This is not a chatbot clone --- it is a miniature reliability pipeline
 showcasing:
 
--   Systems thinking for AI\
--   Evaluation-aware architecture\
--   Guardrail design\
--   Structured outputs for routing\
+-   Systems thinking for AI
+-   Evaluation-aware architecture
+-   Guardrail design
+-   Structured outputs for routing
 -   Early-stage alignment patterns
-
-------------------------------------------------------------------------
-
-## 📄 License
-
-MIT License --- feel free to build on top of this project.
 
 ------------------------------------------------------------------------
 
