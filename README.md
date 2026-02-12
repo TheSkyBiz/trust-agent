@@ -39,26 +39,26 @@ safety and epistemic robustness in LLM workflows.
 
 ## Key Features
 
-**Asymmetric Model Design**\
+**Asymmetric Model Design**\:
 Uses a smaller model for generation and a stronger model for evaluation
 --- a common pattern in production AI systems.
 
-**Automated Self-Critique**\
+**Automated Self-Critique**\:
 Each response is analyzed for hallucination risk, logical errors,
 factual accuracy, and overconfidence.
 
-**Trust Scoring**\
+**Trust Scoring**\:
 Structured output allows programmatic decision-making based on evaluator
 confidence.
 
-**Conditional Regeneration**\
+**Conditional Regeneration**\:
 Low-trust answers trigger a safer second-pass response.
 
-**Run Logging**\
+**Run Logging**\:
 All interactions are stored for lightweight evaluation and failure
 analysis.
 
-**Premise Correction**\
+**Premise Correction**\:
 The generator is instructed to reject false assumptions rather than
 hallucinate explanations.
 
